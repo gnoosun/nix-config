@@ -49,11 +49,11 @@ bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+ unmute"
 # Framework Laptop F3: XF86AudioLowerVolume
 bindsym XF86AudioLowerVolume exec "amixer set Master 5%- unmute"
 # Framework Laptop F4: XF86AudioPrev
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPrev exec playerctl position 5-
 # Framework Laptop F5: XF86AudioPlay
 bindsym XF86AudioPlay exec playerctl play-pause
 # Framework Laptop F6: XF86AudioNext
-bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioNext exec playerctl position 5+
 # Framework Laptop F7: XF86MonBrightnessDown
 # The --min-value option is important to prevent the complete darkness.
 bindsym XF86MonBrightnessDown exec "brightnessctl --device amdgpu_bl1 --min-value=5 set 5%-"
