@@ -72,6 +72,9 @@
   # Power management
   services.power-profiles-daemon.enable = true;
 
+  # Firmware daemon
+  services.fwupd.enable = true;
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
