@@ -56,7 +56,6 @@ bindsym XF86MonBrightnessDown exec "brightnessctl --device amdgpu_bl1 --min-valu
 # Framework Laptop F8: XF86MonBrightnessUp
 bindsym XF86MonBrightnessUp exec "brightnessctl --device amdgpu_bl1 set 5%+"
 # Framework Laptop F9: Super_L
-bindsym Super_L exec i3-sensible-terminal
 # Framework Laptop F10: XF86RFKill
 # Framework Laptop F11: Print
 # Framework Laptop F12: XF86AudioMedia
