@@ -6,12 +6,13 @@ general {
 order += "wireless _first_"
 order += "memory"
 order += "cpu_temperature 0"
-# order += "disk /"
+order += "disk /"
 order += "battery all"
 order += "tztime local"
 
 wireless _first_ {
-        format_up = "W: (%quality at %essid) %ip"
+        #  format_up = "W: (%quality at %essid) %ip"
+        format_up = "Wifi:%quality"
         format_down = "W: down"
 }
 
@@ -39,18 +40,18 @@ load {
 }
 
 cpu_temperature 0 {
-        format = "T: %degrees °C"
+        format = "CPU: %degrees°C"
         path = "/sys/class/thermal/thermal_zone*/temp"
 }
 
 memory {
-        format = "M: %used"
+        format = "Mem: %used"
         threshold_degraded = "10%"
         format_degraded = "M_Free: %free"
 }
 
 disk "/" {
-        format = "D: %free"
+        format = "Disk: %used"
 }
 
 read_file uptime {
