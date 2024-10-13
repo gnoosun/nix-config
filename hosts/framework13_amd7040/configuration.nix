@@ -41,10 +41,15 @@
   # i3
   environment.pathsToLink = [ "/libexec" ];
   services.displayManager.defaultSession = "none+i3";
+
   services.xserver = {
     desktopManager = {
       xterm.enable = false;
     };
+
+    displayManager.sessionCommands = ''
+      xinput set-prop "PIXA3854:00 093A:0274 Touchpad" "libinput Natural Scrolling Enabled" 1
+      '';
 
     windowManager.i3 = {
       enable = true;
