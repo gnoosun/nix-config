@@ -62,6 +62,7 @@
 	brightnessctl
 	playerctl
 	alsa-utils
+	udiskie
       ];
 
       # configFile = ./dotfiles/i3/config;

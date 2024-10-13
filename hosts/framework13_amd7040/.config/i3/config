@@ -34,6 +34,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+
+# Start usb disk automount daemon
+exec --no-startup-id udiskie &
+
 # framework function keys
 # Media keys
 # $ xev -event keyboard
