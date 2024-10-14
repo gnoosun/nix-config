@@ -10,3 +10,6 @@ ln -sf "$ABSPATH"/.config/i3 ~/.config/i3
 
 [ ! -d ~/.config/i3status ] || mv ~/.config/i3status /tmp/
 ln -sf "$ABSPATH"/.config/i3status ~/.config/i3status
+
+[ ! -d ~/.config/wallpapers ] || mv ~/.config/wallpapers /tmp/
+ln -sf "$ABSPATH"/.config/wallpapers ~/.config/wallpapers
