@@ -35,6 +35,9 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  # Enable amdgpu vsync
+  services.xserver.deviceSection = ''Option "TearFree" "true"'';
+
   # Enable automatic login for the user.
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "seans";
