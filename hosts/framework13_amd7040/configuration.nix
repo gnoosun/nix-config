@@ -71,6 +71,7 @@
 	alsa-utils
 	udiskie
 	networkmanagerapplet
+	blueberry
       ];
 
       # configFile = ./dotfiles/i3/config;
