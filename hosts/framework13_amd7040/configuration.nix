@@ -36,6 +36,7 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
+  services.xserver.videoDrivers = [ "amdgpu" ];
 
   # Enable amdgpu vsync
   services.xserver.deviceSection = ''Option "TearFree" "true"'';
@@ -121,6 +122,11 @@
 
   # Install firefox.
   programs.firefox.enable = true;
+
+  # Stream
+  programs.gamescope.enable = true;
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
