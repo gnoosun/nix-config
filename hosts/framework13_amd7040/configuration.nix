@@ -70,6 +70,7 @@
 	playerctl
 	alsa-utils
 	udiskie
+	networkmanagerapplet
       ];
 
       # configFile = ./dotfiles/i3/config;
