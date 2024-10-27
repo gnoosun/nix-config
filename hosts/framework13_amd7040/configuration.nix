@@ -42,7 +42,7 @@
   services.xserver.deviceSection = ''Option "TearFree" "true"'';
 
   # Enable automatic login for the user.
-  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.enable = false;
   services.displayManager.autoLogin.user = "seans";
 
   # i3
@@ -57,6 +57,17 @@
     displayManager.sessionCommands = ''
       xinput set-prop "PIXA3854:00 093A:0274 Touchpad" "libinput Natural Scrolling Enabled" 1
       '';
+    displayManager.lightdm.greeters.mini = {
+      enable = true;
+      user = "seans";
+      extraConfig = ''
+        [greeter]
+        show-password-label = false
+
+        [greeter-theme]
+        window-color = "#F47248"
+      '';
+    };
 
     windowManager.i3 = {
       enable = true;
@@ -72,6 +83,7 @@
 	udiskie
 	networkmanagerapplet
 	blueberry
+        lightdm-mini-greeter
       ];
 
       # configFile = ./dotfiles/i3/config;
