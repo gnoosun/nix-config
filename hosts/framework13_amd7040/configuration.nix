@@ -119,6 +119,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       darktable
+      shotwell
     ];
   };
 
