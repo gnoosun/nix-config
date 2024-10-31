@@ -126,10 +126,6 @@
     isNormalUser = true;
     description = "SeanS";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      darktable
-      shotwell
-    ];
   };
 
   # Install firefox.
@@ -153,6 +149,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    home-manager
     vim
     neovim
     wget
