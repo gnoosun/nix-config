@@ -54,9 +54,6 @@
       xterm.enable = false;
     };
 
-    displayManager.sessionCommands = ''
-      xinput set-prop "PIXA3854:00 093A:0274 Touchpad" "libinput Natural Scrolling Enabled" 1
-      '';
     displayManager.lightdm.greeters.mini = {
       enable = true;
       user = "seans";
