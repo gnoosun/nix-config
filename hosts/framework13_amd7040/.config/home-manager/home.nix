@@ -1,7 +1,7 @@
 { lib, pkgs, ... }:
 {
   imports = [
-    ../../../../modules/shared/default.nix
+    ../../../../common/home.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
