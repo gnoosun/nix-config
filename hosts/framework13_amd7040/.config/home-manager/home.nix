@@ -1,10 +1,13 @@
 { lib, pkgs, ... }:
 {
+  nixpkgs.config.allowUnfree = true;
+
   home = {
     packages = with pkgs; [
       hello
       darktable
       shotwell
+      discord
     ];
 
     username = "seans";
