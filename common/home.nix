@@ -3,5 +3,6 @@
   imports = [
     ./vim.nix
     ./photography.nix
+    ./discord.nix
   ];
 }

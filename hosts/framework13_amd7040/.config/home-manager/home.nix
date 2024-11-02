@@ -4,11 +4,8 @@
     ../../../../common/home.nix
   ];
 
-  nixpkgs.config.allowUnfree = true;
-
   home = {
     packages = with pkgs; [
-      discord
     ];
 
     username = "seans";
