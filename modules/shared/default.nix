@@ -2,5 +2,6 @@
 {
   imports = [
     ./vim.nix
+    ./photography.nix
   ];
 }

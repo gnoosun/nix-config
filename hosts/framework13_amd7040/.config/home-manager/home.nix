@@ -8,9 +8,6 @@
 
   home = {
     packages = with pkgs; [
-      hello
-      darktable
-      shotwell
       discord
     ];
 
