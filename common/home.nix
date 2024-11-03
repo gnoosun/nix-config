@@ -5,4 +5,8 @@
     ./photography.nix
     ./discord.nix
   ];
+
+  home.packages = with pkgs; [
+    cscope
+  ];
 }
