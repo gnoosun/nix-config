@@ -1,8 +1,8 @@
 { config, lib, pkgs, utils, ... }:
 {
   imports = [
-    ./vim.nix
-    ./photography.nix
-    ./discord.nix
+    ./modules/vim.nix
+    ./modules/photography.nix
+    ./modules/discord.nix
   ];
 }
