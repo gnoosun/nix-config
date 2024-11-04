@@ -1,5 +1,9 @@
 { config, pkgs, lib, ... }:
 {
+  home.packages = with pkgs; [
+    cscope
+  ];
+
   programs.vim = {
     enable = true;
     plugins = with pkgs.vimPlugins; [ vim-airline vim-airline-themes ];
