@@ -8,6 +8,9 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+
+      # gaming imports
+      ../../common/gaming.nix
     ];
 
   # Bootloader.
@@ -130,11 +133,6 @@
 
   # Install firefox.
   programs.firefox.enable = true;
-
-  # Stream
-  programs.gamescope.enable = true;
-  programs.steam.enable = true;
-  programs.steam.gamescopeSession.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
