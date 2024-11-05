@@ -6,7 +6,6 @@
     wget
     tmux
     fastfetch
-    fzf
     yazi
   ];
 }

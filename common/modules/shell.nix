@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     zoxide
+    fzf
   ];
 
   programs.zsh = {
@@ -15,6 +16,7 @@
     };
 
     initExtra =''
+      eval "$(fzf --zsh)"
       eval "$(zoxide init --cmd cd zsh)"
     '';
   };
