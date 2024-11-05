@@ -7,5 +7,6 @@
     tmux
     fastfetch
     yazi
+    htop
   ];
 }
