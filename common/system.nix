@@ -7,6 +7,6 @@
     tmux
     fastfetch
     fzf
-    ranger
+    yazi
   ];
 }
