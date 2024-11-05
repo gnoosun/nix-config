@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
 
-      # gaming imports
+      ../../common/system.nix
       ../../common/gaming.nix
     ];
 
@@ -84,6 +84,7 @@
 	networkmanagerapplet
 	blueberry
         lightdm-mini-greeter
+        feh
       ];
 
       # configFile = ./dotfiles/i3/config;
@@ -139,7 +140,7 @@
 
   # session variables
   environment.variables = {
-    EDITOR = "nvim";
+    EDITOR = "vim";
     BROWSER = "firefox";
     TERMINAL = "kitty";
   };
@@ -148,17 +149,8 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     home-manager
-    vim
-    neovim
-    wget
-    tmux
-    neofetch
-    feh
-    git
     kitty
     busybox
-    fzf
-    ranger
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
