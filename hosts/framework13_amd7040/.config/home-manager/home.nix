@@ -13,4 +13,10 @@
 
     stateVersion = "24.05";
   };
+
+  programs.git = {
+    enable = true;
+    userName = "gnoosun";
+    userEmail = "gnooroo@gmail.com";
+  };
 }
