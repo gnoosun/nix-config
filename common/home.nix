@@ -5,5 +5,6 @@
     ./modules/photography.nix
     ./modules/discord.nix
     ./modules/shell.nix
+    ./modules/kitty.nix
   ];
 }
