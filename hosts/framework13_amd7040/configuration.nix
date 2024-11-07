@@ -87,7 +87,7 @@
         feh
       ];
 
-      # configFile = ./dotfiles/i3/config;
+      configFile = dotfiles/i3.conf;
     };
   };
 
