@@ -1,7 +1,7 @@
 { lib, pkgs, ... }:
 {
   imports = [
-    ../../../common/home.nix
+    ../../common/personal-home.nix
   ];
 
   home = {
