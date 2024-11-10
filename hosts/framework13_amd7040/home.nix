@@ -20,6 +20,8 @@
     userEmail = "gnooroo@gmail.com";
   };
 
+  home.file.".config/wallpapers/framework.jpg".source = ./dotfiles/wallpapers/framework.jpg;
+
   home.file.".config/i3status/config".text = ''
     general {
             colors = true
