@@ -9,8 +9,8 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
 
-      ../../common/system.nix
-      ../../common/gaming.nix
+      ./common/system.nix
+      ./common/gaming.nix
     ];
 
   # Bootloader.
@@ -87,7 +87,7 @@
         feh
       ];
 
-      configFile = dotfiles/i3.conf;
+      configFile = common/dotfiles/i3.conf;
     };
   };
 

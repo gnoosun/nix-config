@@ -1,7 +1,7 @@
 { lib, pkgs, ... }:
 {
   imports = [
-    ../../common/personal-home.nix
+    ./common/personal-home.nix
   ];
 
   home = {
@@ -20,7 +20,7 @@
     userEmail = "gnooroo@gmail.com";
   };
 
-  home.file.".config/wallpapers/framework.jpg".source = ./dotfiles/wallpapers/framework.jpg;
+  home.file.".config/wallpapers/framework.jpg".source = ./common/dotfiles/wallpapers/framework.jpg;
 
   home.file.".config/i3status/config".text = ''
     general {
