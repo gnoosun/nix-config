@@ -8,9 +8,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-
-      ./common/system.nix
-      ./common/gaming.nix
     ];
 
   # Bootloader.
@@ -87,7 +84,7 @@
         feh
       ];
 
-      configFile = common/dotfiles/i3.conf;
+      configFile = dotfiles/i3.conf;
     };
   };
 
@@ -153,6 +150,13 @@
     home-manager
     kitty
     busybox
+    git
+    vim
+    wget
+    tmux
+    fastfetch
+    yazi
+    htop
   ];
 
   # Enable virtualbox.
@@ -160,6 +164,11 @@
 
   # Enable the Oracle Extension Pack.
   virtualisation.virtualbox.host.enableExtensionPack = true;
+
+  # Gaming
+  programs.gamescope.enable = true;
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
