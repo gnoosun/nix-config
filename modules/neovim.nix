@@ -5,6 +5,7 @@
 
   programs.neovim = {
     enable = true;
-    extraConfig = lib.fileContents ../dotfiles/nvim-config;
+    viAlias = true;
+    vimAlias = true;
   };
 }
