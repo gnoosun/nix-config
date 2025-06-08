@@ -151,7 +151,6 @@
     kitty
     busybox
     git
-    vim
     wget
     tmux
     fastfetch

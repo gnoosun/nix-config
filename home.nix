@@ -2,14 +2,18 @@
 {
   imports = [
     ./modules/vim.nix
+    ./modules/neovim.nix
     ./modules/photography.nix
     ./modules/discord.nix
     ./modules/shell.nix
     ./modules/kitty.nix
+    ./modules/programming.nix
   ];
 
   home = {
     packages = with pkgs; [
+      fd
+      ripgrep
     ];
 
     username = "seans";
