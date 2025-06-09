@@ -7,5 +7,10 @@
       font_size = "12.0";
       font_family = "monospace";
     };
+
+    font = {
+      name = "FiraCode Nerd Font Mono";
+      size = 14;
+    };
   };
 }
