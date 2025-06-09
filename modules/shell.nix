@@ -15,7 +15,7 @@
       enable = true;
     };
 
-    initExtra =''
+    initContent =''
       eval "$(fzf --zsh)"
       eval "$(zoxide init --cmd cd zsh)"
     '';
