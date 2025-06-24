@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       enable_audio_bell = false;
-      font_size = "12.0";
+      font_size = "14.0";
       font_family = "monospace";
     };
 
