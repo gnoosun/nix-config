@@ -4,5 +4,7 @@
     gnumake
     rustup
     gcc
+    go
+    python3
   ];
 }
